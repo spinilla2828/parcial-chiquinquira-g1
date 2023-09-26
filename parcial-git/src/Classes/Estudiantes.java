@@ -38,11 +38,11 @@ public class Estudiantes
 		this.edad = edad;
 	}
 	
-	public List<String> getAsignaturas() {
+	public List<String> getAsignatura() {
         return asignaturas;
     }
 	
-	public void setAsignaturas(List<String> asignaturas)
+	public void setAsignatura(List<String> asignaturas)
 	{
 		this.asignaturas = asignaturas;
 	}
