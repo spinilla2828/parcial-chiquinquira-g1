@@ -3,7 +3,7 @@ package Classes;
 import java.util.List;
 
 public class BuscarEstudiante {
-	public static void mostrarEstudiantePorNombre(List<Estudiantes> listaEstudiantes, String nombreBuscar) {
+	public void BuscarEstudiantePorNombre(List<Estudiantes> listaEstudiantes, String nombreBuscar) {
         boolean encontrado = false;
         for(Estudiantes estudiante : listaEstudiantes){
         	if (estudiante.getNombre().equalsIgnoreCase(nombreBuscar)) {
