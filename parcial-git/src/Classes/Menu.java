@@ -2,10 +2,10 @@ package Classes;
 
 import java.util.Scanner;
 
-public class menu {
+public class Menu {
     
 
-    public static void ejecutarMenu() {
+    public void ejecutarMenu() {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -15,7 +15,7 @@ public class menu {
             System.out.println("3. Buscar estudiantes por asignatura.");
             System.out.println("4. Mostrar todos los estudiantes.");
             System.out.println("5. Salir del programa.");
-            System.out.print("Seleccione una opción: ");
+            System.out.print("Seleccione una opcion: ");
 
             int opcion = scanner.nextInt();
             scanner.nextLine();
