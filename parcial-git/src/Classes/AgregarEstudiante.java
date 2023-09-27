@@ -10,7 +10,7 @@ public class AgregarEstudiante {
 	{
 		Estudiantes estudiante = new Estudiantes(nombre, edad, asignaturas);
         listaEstudiantes.add(estudiante);
-        System.out.println("Estudiante agregado con éxito.");
+        System.out.println("Estudiante agregado con exito.");
 	}
 	
 	public List<Estudiantes> getListaEstudiantes()
