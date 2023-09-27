@@ -12,6 +12,7 @@ public class Menu {
         AgregarEstudiante agregarEstudiante = new AgregarEstudiante(); // Crear instancia de AgregarEstudiante
         BuscarEstudiante buscarEstudiante = new BuscarEstudiante();
         BuscarEstudiantePorAsignatura buscarEstudianteAsignatura = new BuscarEstudiantePorAsignatura();
+        MostrarEstudiante mostrarEstudiante = new MostrarEstudiante();
         
         do {
             System.out.println("\nMenu:");
@@ -79,6 +80,7 @@ public class Menu {
                     break;
                 case 4:
                     // Caso 4 mostrar todos los estudiantes aqui
+                	mostrarEstudiante.mostrar_estudiantes(listaEstudiantes);
                     break;
                 case 5:
                 	// Caso 5 mostrar todos los estudiantes aqui
