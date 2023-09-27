@@ -11,6 +11,7 @@ public class Menu {
         List<Estudiantes> listaEstudiantes = new ArrayList<>();
         AgregarEstudiante agregarEstudiante = new AgregarEstudiante(); // Crear instancia de AgregarEstudiante
         BuscarEstudiante buscarEstudiante = new BuscarEstudiante();
+        BuscarEstudiantePorAsignatura buscarEstudianteAsignatura = new BuscarEstudiantePorAsignatura();
         
         do {
             System.out.println("\nMenu:");
@@ -55,6 +56,10 @@ public class Menu {
                     break;
                 case 3:
                     // Caso 3 buscar estudiantes por asignatura aqui
+                	System.out.println("Ingrese el nombre de la asignatura: ");
+                	String asignatura = scanner.nextLine();
+                	
+                	buscarEstudianteAsignatura.buscarEstudiantePorAsignatura(listaEstudiantes, nombreBuscar);
                     break;
                 case 4:
                     // Caso 4 mostrar todos los estudiantes aqui
