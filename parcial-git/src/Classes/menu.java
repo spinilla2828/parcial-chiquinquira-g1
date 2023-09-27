@@ -8,7 +8,7 @@ public class menu {
     public static void ejecutarMenu() {
         Scanner scanner = new Scanner(System.in);
 
-        while (true) {
+        while (true) {//menu con cada una de las opciones
             System.out.println("Menú:");
             System.out.println("1. Agregar estudiante.");
             System.out.println("2. Buscar estudiante.");
