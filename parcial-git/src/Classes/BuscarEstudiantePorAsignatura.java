@@ -1,16 +1,19 @@
 package Classes;
 
+import java.util.List;
+
 public class BuscarEstudiantePorAsignatura {
 
 	public void buscarEstudiantePorAsignatura(List<Estudiantes> listaEstudiantes, String asignatura) {
 		
-		System.out.println("Lista de estudiantes de la asignatura: "+asgnatura);
+		System.out.println("Lista de estudiantes de la asignatura: "+asignatura);
 		
 		int cantidad = 0;
 		
-		for( Estudiantes estudiante: listaEstudiantes {
-			if(asignatura.equals == getAsitaturas()) {
-				System.out.println("mombre Estudiante: "+ getNombre());
+		for( Estudiantes estudiante: listaEstudiantes) {
+			List<String> asignaturaEstudiantes = estudiante.getAsignatura();
+			if(asignaturaEstudiantes.contains(asignatura)) {
+				System.out.println("mombre Estudiante: "+ estudiante.getNombre());
 				cantidad++;
 			}
 		}
