@@ -59,7 +59,7 @@ public class Menu {
                 	System.out.println("Ingrese el nombre de la asignatura: ");
                 	String asignatura = scanner.nextLine();
                 	
-                	buscarEstudianteAsignatura.buscarEstudiantePorAsignatura(listaEstudiantes, nombreBuscar);
+                	buscarEstudianteAsignatura.buscarEstudiantePorAsignatura(listaEstudiantes, asignatura);
                     break;
                 case 4:
                     // Caso 4 mostrar todos los estudiantes aqui
