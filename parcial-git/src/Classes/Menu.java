@@ -8,7 +8,9 @@ public class Menu {
     public void ejecutarMenu() {
         Scanner scanner = new Scanner(System.in);
         int opcion = 0;
+        List<Estudiantes> listaEstudiantes = new ArrayList<>();
         AgregarEstudiante agregarEstudiante = new AgregarEstudiante(); // Crear instancia de AgregarEstudiante
+        BuscarEstudiante buscarEstudiante = new BuscarEstudiante();
         
         do {
             System.out.println("\nMenu:");
@@ -42,9 +44,14 @@ public class Menu {
                     }
 
                     agregarEstudiante.AgregarEstudiantes(nombre, edad, asignaturas);
+                    listaEstudiantes.add(new Estudiantes(nombre, edad, asignaturas));
                     break;
                 case 2:
                     // Caso 2 buscar estudiante aqui
+                	System.out.println("Ingrese el nombre del estudiante: ");
+                	String nombreBuscar = scanner.nextLine();
+                	
+                	buscarEstudiante.BuscarEstudiantePorNombre(listaEstudiantes, nombreBuscar);
                     break;
                 case 3:
                     // Caso 3 buscar estudiantes por asignatura aqui
