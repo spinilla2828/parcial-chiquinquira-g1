@@ -10,11 +10,11 @@ public class Menu {
         int opcion = 0;
         List<Estudiantes> listaEstudiantes = new ArrayList<>();
         AgregarEstudiante agregarEstudiante = new AgregarEstudiante(); // Crear instancia de AgregarEstudiante
-        BuscarEstudiante buscarEstudiante = new BuscarEstudiante();
-        BuscarEstudiantePorAsignatura buscarEstudianteAsignatura = new BuscarEstudiantePorAsignatura();
+        BuscarEstudiante buscarEstudiante = new BuscarEstudiante();//crear instancia de buscar estudiante 
+        BuscarEstudiantePorAsignatura buscarEstudianteAsignatura = new BuscarEstudiantePorAsignatura();//instancia de buscar por asignatura
         MostrarEstudiante mostrarEstudiante = new MostrarEstudiante();
         
-        do {
+        do {//opciones del menu
             System.out.println("\nMenu:");
             System.out.println("1. Agregar estudiante.");
             System.out.println("2. Buscar estudiante.");
@@ -23,6 +23,7 @@ public class Menu {
             System.out.println("5. Salir del programa.");
             System.out.print("Seleccione una opcion: ");
             
+            //while para varidar la opcion
             while (!scanner.hasNextInt()) {
                 System.out.println("\nOpcion no valida. Intente de nuevo.");
                 System.out.print("Seleccione una opcion: ");
@@ -34,9 +35,10 @@ public class Menu {
             switch (opcion) {
                 case 1:
                     // Caso 1 agregar estudiante aqui
-                	System.out.print("\nIngrese el nombre del estudiante: ");
-                    String nombre = scanner.nextLine();
+                	System.out.print("\nIngrese el nombre del estudiante: ");//pide al usuario ingresar dato para validar
+                    String nombre = scanner.nextLine();//se toma el dato
                     System.out.print("Ingrese la edad del estudiante: ");
+                    //while para validar que la edad que ingrese sea numerica y valida
                     while (!scanner.hasNextInt()) {
                         System.out.println("Edad no valida. Intente de nuevo.");
                         System.out.print("Ingrese la edad del estudiante: ");
@@ -62,7 +64,7 @@ public class Menu {
                     }
 
                     agregarEstudiante.AgregarEstudiantes(nombre, edad, asignaturas);
-                    listaEstudiantes.add(new Estudiantes(nombre, edad, asignaturas));
+                    listaEstudiantes.add(new Estudiantes(nombre, edad, asignaturas));//agrega los datos y muestra la lista
                     break;
                 case 2:
                     // Caso 2 buscar estudiante aqui
