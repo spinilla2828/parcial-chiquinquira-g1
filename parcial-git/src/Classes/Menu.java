@@ -11,7 +11,7 @@ public class Menu {
         AgregarEstudiante agregarEstudiante = new AgregarEstudiante(); // Crear instancia de AgregarEstudiante
         
         do {
-            System.out.println("\n1Menu:");
+            System.out.println("\nMenu:");
             System.out.println("1. Agregar estudiante.");
             System.out.println("2. Buscar estudiante.");
             System.out.println("3. Buscar estudiantes por asignatura.");
